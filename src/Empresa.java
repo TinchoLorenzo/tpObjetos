@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 
 public class Empresa extends Usuario{
-    putooo
+	puto
 	private ArrayList<Maquina> maquinas;
 	private ArrayList<Usuario> usuarios;
 	private ArrayList<Trabajo> trabajos;
