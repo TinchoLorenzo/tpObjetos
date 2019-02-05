@@ -15,7 +15,7 @@ public class Trabajo {
 	public Trabajo(){};
 	
     public Trabajo(Factura factura, Empresa empleado, Usuario empleador, double total, double pagado, int id_Trabajo, Date fecha, String direccion) {
-		this.factura=factura;
+	x	this.factura=factura;
 		this.empleado=empleado;
 		this.empleador=empleador;
 		this.total=total;

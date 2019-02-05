@@ -9,6 +9,7 @@ public class Contrato {
 	private String tipoPago;
 	private ArrayList<Factura> facturas;
 	
+	
 	public Contrato() {
 		// TODO Auto-generated constructor stub
 		arrendador=null;

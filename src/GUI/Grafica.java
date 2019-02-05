@@ -1,10 +1,8 @@
-package GUI;
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Graphicss {
+public class Grafica {
 
 	private JFrame frame;
 
@@ -15,7 +13,7 @@ public class Graphicss {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Graphicss window = new Graphicss();
+					Grafica window = new Grafica();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -27,7 +25,7 @@ public class Graphicss {
 	/**
 	 * Create the application.
 	 */
-	public Graphicss() {
+	public Grafica() {
 		initialize();
 	}
 
