@@ -29,5 +29,4 @@ public class Lote {
 		this.id_Lote = id_Lote;
 	}
 	
-	
 }

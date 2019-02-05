@@ -3,9 +3,11 @@ import java.util.ArrayList;
 
 public class Campo {
 
+	private Persona duenio;
 	private String direccion;
 	private int tamano;
 	private ArrayList<Lote> lotes;
+	private String nombre;
 	private int id_Campo;
 	
 	

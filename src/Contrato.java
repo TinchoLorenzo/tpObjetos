@@ -1,13 +1,18 @@
+import java.sql.Date;
 import java.util.ArrayList;
 
 
 public class Contrato {
 
-	private Usuario arrendador;
 	private Usuario arrendatario;
 	private int id_Contrato;
 	private String tipoPago;
+	private Campo campo;
 	private ArrayList<Factura> facturas;
+	private Date fEmision;
+	private Date fFin;
+	private int fPagoXMes; /// Preguntar como se debe hacer
+	
 	
 	public Contrato() {
 		// TODO Auto-generated constructor stub

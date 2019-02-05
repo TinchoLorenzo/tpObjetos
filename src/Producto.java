@@ -6,14 +6,14 @@ public 	class Producto {
 	private Date fingreso;
 	private String tipo;
 	private int cantidad;
-	private String direccion;
+	private String descripcion;
 	private int id_Producto;
 	
 	public Producto(){};
 		
-	public Producto(int id_Producto, String direccion, int cantidad, String tipo, Date fingreso){
+	public Producto(int id_Producto, String descripcion, int cantidad, String tipo, Date fingreso){
 		this.tipo = tipo;
-		this.direccion=direccion;
+		this.descripcion=descripcion;
 		this.id_Producto=id_Producto;
 		this.cantidad=cantidad;
 		this.fingreso = fingreso;
@@ -36,12 +36,12 @@ public 	class Producto {
 		this.cantidad = cantidad;
 	}
 	
-	public String getDireccion() {
-		return direccion;
+	public String getdescripcion() {
+		return descripcion;
 	}
 	
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setdescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	
 	

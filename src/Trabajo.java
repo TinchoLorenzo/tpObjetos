@@ -9,7 +9,7 @@ public class Trabajo {
 	private Date fecha;
 	private String direccion; /// Direccion o campo?????
 	private double total;
-	private double pagado;
+	//private ArrayList<Pago> pagos;
 	private int id_Trabajo;
 	
 	public Trabajo(){};
@@ -58,13 +58,6 @@ public class Trabajo {
 		this.total = total;
 	}
 	
-	public double getPagado() {
-		return pagado;
-	}
-	
-	public void setPagado(double pagado) {
-		this.pagado = pagado;
-	}
 	
 	public int getId_Trabajo() {
 		return id_Trabajo;
@@ -74,5 +67,10 @@ public class Trabajo {
 		this.id_Trabajo = id_Trabajo;
 	}
 	
+	
+	/*public double getCobrado() {
+		
+		
+	}*/
 	
 }
