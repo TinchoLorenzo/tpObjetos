@@ -14,6 +14,7 @@ public class Contrato {
 	private int fPagoXMes; /// Preguntar como se debe hacer
 	
 	
+	
 	public Contrato() {
 		// TODO Auto-generated constructor stub
 		arrendador=null;
