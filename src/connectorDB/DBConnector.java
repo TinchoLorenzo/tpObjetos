@@ -20,15 +20,14 @@ public class DBConnector {
 		
 		try {
 			Class.forName("org.sqlite.JDBC");
-			String dbPath = "D:\\Facultad\\tpObjetos\\WindowsTpObjetos\\GestionCampo\\databaseSQLITE\\tpObjetos.db";
+			String dbPath = "/media/tinchodell/01D33C71ADC61FD0/Facultad/tpObjetos/tpObjetos/TrabajoFinalObjetos/databaseSQLITE/tpObjetos";
 			Connection connection = DriverManager.getConnection("jdbc:sqlite:"+dbPath);
 			
-			if (false) {
 			/// ESTO TIENE QUE IR EN OTRA CLASE CREO QUE SE LLAMARIA INICIALIZADOR DE BASE DE DATOS O ALGO ASI
 			
 			/// HAY QUE MODIFICARLO PARA DETECTAR UN STRING NUEVO CADA VEZ QUE APARECE CREATE TABLE, Y REALIZAR LO MISMO CON LAS INSERSIONES
 			String dbInitializer = "";
-			String fileName = "./databaseSQLITE/creador.txt";
+			String fileName = "/media/tinchodell/01D33C71ADC61FD0/Facultad/tpObjetos/tpObjetos/TrabajoFinalObjetos/databaseSQLITE/creador.txt";
 			String line=null;
 			
             FileReader fileReader =  new FileReader(fileName);
@@ -41,7 +40,7 @@ public class DBConnector {
             }   
             
             
-            bufferedReader.close();
+            bufferedReader.close();         
 					
 			
             
@@ -60,7 +59,6 @@ public class DBConnector {
             statement.executeUpdate(dbInitializer);
             
 			//JOptionPane.showMessageDialog(null, "Conexion exitosa");
-            }
 			return connection;
 		} catch (Exception e) {
 			//JOptionPane.showMessageDialog(null, e);

@@ -9,13 +9,13 @@ public class Trabajo {
 	private Date fecha;
 	private String direccion; /// Direccion o campo?????
 	private double total;
-	//private ArrayList<Pago> pagos;
+	private double pagado;
 	private int id_Trabajo;
 	
 	public Trabajo(){};
 	
     public Trabajo(Factura factura, Empresa empleado, Usuario empleador, double total, double pagado, int id_Trabajo, Date fecha, String direccion) {
-	x	this.factura=factura;
+		this.factura=factura;
 		this.empleado=empleado;
 		this.empleador=empleador;
 		this.total=total;
@@ -58,6 +58,13 @@ public class Trabajo {
 		this.total = total;
 	}
 	
+	public double getPagado() {
+		return pagado;
+	}
+	
+	public void setPagado(double pagado) {
+		this.pagado = pagado;
+	}
 	
 	public int getId_Trabajo() {
 		return id_Trabajo;
@@ -67,10 +74,5 @@ public class Trabajo {
 		this.id_Trabajo = id_Trabajo;
 	}
 	
-	
-	/*public double getCobrado() {
-		
-		
-	}*/
 	
 }
