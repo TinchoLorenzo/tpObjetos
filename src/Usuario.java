@@ -1,53 +1,35 @@
-import org.apache.commons.codec.digest.DigestUtils;
+import java.util.ArrayList;
 
-public class Usuario {
 
-	private String nombre;
-	private String 	password;
-	private String cuit; ///cuit = id usuario????
-	private int id_Usuario;
+public class Usuario extends Persona {
+
+	private ArrayList<Producto> productos;
+///	private ArrayList<Contrato> contratos; Idem a VENTAS
+//	private ArrayList<Venta> ventas; Innecesario, lo devuelve un metodo y nada mas
 	
-	public Usuario(){
+	public void agregarMaquina(Maquina m){
 		
 		
-		
-	};
+	}
 	
-	public boolean login(String pass){
-		
-		if (DigestUtils.sha512Hex(pass)==password){
-			return true;
+	public void eliminarMaquina(Maquina m){
+			
+			
 		}
-		return false;
-	}
 	
-	public String getNombre() {
-		return nombre;
-	
-	}
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	
-	public String getPassword() {
-		return password;
-	}
-	
-	
-	public void setPassword(String password) {
-		String digesto = (String) DigestUtils.sha512Hex(password);
-		this.password = digesto;
-	}
-	
-	public String getCuit() {
-		return cuit;
-	}
-	
-	
-	public void setCuit(String cuit) {
+	public void agregarProducto(Maquina m){
 		
-		this.cuit = cuit;
+		
+	}
+	
+	public void eliminarProducto(Maquina m){
+		
+		
+	}
+	
+	public void agregarContrato(Maquina m){
+		
+		
 	}
 	
 	

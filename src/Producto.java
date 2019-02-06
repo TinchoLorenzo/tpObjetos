@@ -3,10 +3,15 @@ import java.sql.Date;
 
 public 	class Producto {
 
-	private Date fingreso;
-	private String tipo;
+	private Date fingreso; ///fecha cosecha
+	private String tipo; /// 
 	private int cantidad;
+<<<<<<< HEAD
 	private String direccion;
+=======
+	private String descripcion;
+	
+>>>>>>> parent of ee1e6a0... Revert "Trabajo 05/02/18"
 	private int id_Producto;
 	
 	public Producto(){};

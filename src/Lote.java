@@ -1,9 +1,23 @@
 
 public class Lote {
 
+	
+	private infoLote infoActual;
 	private int tamano;
-	private String tipo;
 	private int id_Lote;
+	private ArrayList<infoLote>;
+	/*
+	Rendimiento fechacosecha
+	tipo semilla 
+	vendido o no
+	localizacion
+	semilla por has
+	
+	Fertilizante ---> tipo y cantidad
+	Fumigadas ---> tipo y cantidad
+	*/
+	
+	
 	
 	public int getTamano() {
 		return tamano;

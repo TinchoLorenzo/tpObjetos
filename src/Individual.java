@@ -1,35 +1,60 @@
-import java.util.ArrayList;
 
 
-public class Individual extends Usuario {
+/// No sirv de nada, solo para guardar el sha512
+/*
+import org.apache.commons.codec.digest.DigestUtils;
 
-	private ArrayList<Producto> productos;
-///	private ArrayList<Contrato> contratos; Idem a VENTAS
-//	private ArrayList<Venta> ventas; Innecesario, lo devuelve un metodo y nada mas
+public class Usuario {
+
+	private String nombre;
+	private String 	password;
+	private String cuit; ///cuit = id usuario????
+	private int id_Usuario;
 	
-	public void agregarMaquina(Maquina m){
+	
+	
+	public Usuario(){
 		
 		
-	}
+		
+	};
 	
-	public void eliminarMaquina(Maquina m){
-			
-			
+	public boolean login(String pass){
+		
+		if (DigestUtils.sha512Hex(pass)==password){
+			return true;
 		}
-	
-	public void agregarProducto(Maquina m){
-		
-		
+		return false;
 	}
 	
-	public void eliminarProducto(Maquina m){
-		
-		
+	public String getNombre() {
+		return nombre;
+	
 	}
 	
-	public void agregarContrato(Maquina m){
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
+	
+	public void setPassword(String password) {
+		String digesto = (String) DigestUtils.sha512Hex(password);
+		this.password = digesto;
+	}
+	
+	public String getCuit() {
+		return cuit;
+	}
+	
+	
+	public void setCuit(String cuit) {
 		
-		
+		this.cuit = cuit;
 	}
 	
 }
+*/

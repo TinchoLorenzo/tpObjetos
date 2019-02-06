@@ -19,7 +19,6 @@ public class Trabajo {
 		this.empleado=empleado;
 		this.empleador=empleador;
 		this.total=total;
-		this.pagado=pagado;
 		this.id_Trabajo=id_Trabajo;
 		this.fecha=fecha;
     	this.direccion=direccion;
