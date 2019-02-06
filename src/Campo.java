@@ -3,20 +3,21 @@ import java.util.ArrayList;
 
 public class Campo {
 
-	private Persona duenio;
-	private String direccion;
-	private int tamano;
+	private Persona duenio;	
+	private String descripcion;
 	private ArrayList<Lote> lotes;
 	private String nombre;
 	private int id_Campo;
+
+	///Ver
+	private Contrato contratoActual;
 	
-	
-	public String getDireccion() {
-		return direccion;
+	public String getdescripcion() {
+		return descripcion;
 	}
 	
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setdescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	
 	

@@ -3,10 +3,11 @@ import java.sql.Date;
 
 public 	class Producto {
 
-	private Date fingreso;
-	private String tipo;
+	private Date fingreso; ///fecha cosecha
+	private String tipo; /// 
 	private int cantidad;
 	private String descripcion;
+	
 	private int id_Producto;
 	
 	public Producto(){};
