@@ -50,4 +50,11 @@ public class Usuario {
 		this.cuit = cuit;
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 }
