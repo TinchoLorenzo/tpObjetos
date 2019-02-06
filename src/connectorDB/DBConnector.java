@@ -14,9 +14,8 @@ public class DBConnector {
 	
 
  	public DBConnector(){};
+ 
 
- 	public 
- 	
 	public static Connection dbConnector(){
 		
 		try {

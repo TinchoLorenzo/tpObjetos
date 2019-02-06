@@ -3,10 +3,10 @@ import java.sql.Date;
 
 public class Factura {
 
-	private Persona emisor;
-	private Persona destinatario;
-	private double cantidad;
-	private TipoPago tipoPago;
+	private Usuario emisor;
+	private Usuario destinatario;
+	private double monto;
+	private String tipoPago;
 	private Date femision;
 	private Date finicio; /// Date ? String ? DIA MES AÑO ?	
 	private Date ffin;
@@ -18,10 +18,10 @@ public class Factura {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Factura(Persona emisor, Persona destinatario, double cantidad, TipoPago tipoPago, Date femision, Date finicio, Date ffin, Date fvto, String CAE, String rutaFactura){
+	public Factura(Usuario emisor, Usuario destinatario, double monto, String tipoPago, Date femision, Date finicio, Date ffin, Date fvto, String CAE, String rutaFactura){
 		this.emisor=emisor;
 		this.destinatario=destinatario;
-		this.cantidad=cantidad;
+		this.monto=monto;
 		this.tipoPago=tipoPago;
 		this.femision=femision;
 		this.finicio=finicio;
@@ -31,15 +31,15 @@ public class Factura {
 		this.rutaFactura=rutaFactura;
 	}
 	
-	public Persona getEmisor() {
+	public Usuario getEmisor() {
 		return emisor;
 	}
 	
-	public void setEmisor(Persona emisor) {
+	public void setEmisor(Usuario emisor) {
 		this.emisor = emisor;
 	}
 	
-	public Persona getDestinatario() {
+	public Usuario getDestinatario() {
 		return destinatario;
 	}
 	
@@ -47,19 +47,19 @@ public class Factura {
 		return tipoPago;
 	}
 	
-	public void setTipoPago(TipoPago tipopago){
+	public void setTipoPago(String tipopago){
 		this.tipoPago=tipopago;
 	}
-	public void setDestinatario(Persona destinatario) {
+	public void setDestinatario(Usuario destinatario) {
 		this.destinatario = destinatario;
 	}
 	
-	public double getcantidad() {
-		return cantidad;
+	public double getMonto() {
+		return monto;
 	}
 	
-	public void setcantidad(double cantidad) {
-		this.cantidad = cantidad;
+	public void setMonto(double monto) {
+		this.monto = monto;
 	}
 	
 	public Date getFemision() {
